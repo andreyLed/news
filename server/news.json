@@ -1,4 +1,6 @@
 { "news": [
-  {"id":1,"title":"SpaceX rocket explodes on launch pad","html":"...(long html code)..."}
+  {"id":1,"title":"SpaceX rocket explodes on launch pad","html":"...(long html code)..."},
+  {"id":1,"title":"The Mercedes-Maybach S650 Cabriolet is massive, massively opulent","html":"...(long html code)..."},
+  {"id":1,"title":"Google taps into your life to suggest songs in revamped Google Play Music","html":"...(long html code)..."}
   ]
 }

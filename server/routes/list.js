@@ -6,9 +6,17 @@ const db = require('../news.json');
 function getIndex(arr, id) {
   return arr.findIndex(item => item.id === Number(id));
 }
+
+function getTitles(arr) {
+  return arr.map(item => ({
+    id: item.id,
+    title: item.title
+  }));
+}
+
 router.get('/', (req, res) => {
   res.status(200);
-  res.send(db.news);
+  res.send(getTitles(db.news));
 });
 
 router.get('/:id', (req, res) => {
