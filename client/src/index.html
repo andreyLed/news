@@ -6,12 +6,23 @@
 	<title>News</title>
 	<base href="/">
 </head>
+<header>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a ui-sref="home">Новости</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
 
 <body ng-app="app">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-        
+
 				<ui-view></ui-view>
 			</div>
 		</div>
