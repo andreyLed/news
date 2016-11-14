@@ -12,12 +12,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  const index = getIndex(db, req.param.id);
+  const index = getIndex(db.news, req.params.id);
   if (index === -1) {
     res.status(404).send('404');
   } else {
     res.status(200);
-    res.json(db.cards[index]);
+    res.json(db.news[index]);
   }
 });
 
