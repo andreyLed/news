@@ -5,7 +5,6 @@ export default class NewsListController {
   }
 
   $onInit() {
-    console.log('tyt');
     this.init();
   }
 

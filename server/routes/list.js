@@ -15,8 +15,13 @@ function getTitles(arr) {
 }
 
 router.get('/', (req, res) => {
-  res.status(200);
-  res.send(getTitles(db.news));
+  if ({}.hasOwnProperty.call(db, 'news') && Array.isArray(db.news) && db.news.length > 0) {
+    res.status(200);
+    res.send(getTitles(db.news));
+  } else {
+    res.status(404);
+    res.send('404');
+  }
 });
 
 router.get('/:id', (req, res) => {
